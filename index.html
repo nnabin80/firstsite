@@ -3,20 +3,37 @@
     <title> Html Calculator</title>
     <script src="jquery.js"></script>
     <style>
-        #inputs{ position:center;
+        #main{
+            position:center;
+
+        }
+        #inputs{ 
     left: 250px;
     width: calc(100% - 100px);
     border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(oldlace, 0, 0);
+    background-color: rgb(rgba(200, 116, 248, 0.993), 0, 0);
     padding: 50px;
     text-align: center;
+}
+button{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    padding: 5px
+    
+}
+#display{
+    height:50px;
+    background-color: rgb(112, 112, 112);
+    color:black;
+    padding: 5px;
 }
     </style>
 </head>
 <body>
 <div id="main">
-    <div id="display"></div>
-    <div id="inputs"></div>
+    <div id="display">0</div>
+    <div id="inputs">
     <button onclick="calculate(this)">1</button>
     <button onclick="calculate(this)">2</button>
     <button onclick="calculate(this)">3</button>
@@ -34,7 +51,7 @@
     <button onclick="calculate(this)">.</button>
     <button onclick="calculate(this)">%</button><br>
     <button onclick="calculate(this)">=</button>
-
+</div>
 </div>
 </body>    
 </html>
